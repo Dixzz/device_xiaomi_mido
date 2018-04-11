@@ -8,3 +8,4 @@ cc_library_shared {
         "libhidltransport",
     ],
 }
+

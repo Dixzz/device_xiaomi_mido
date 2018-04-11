@@ -22,7 +22,7 @@ TARGET_DENSITY := xxhdpi
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/custom/common.mk)
 
-PRODUCT_NAME := aosp_mido
+PRODUCT_NAME := caf_mido
 BOARD_VENDOR := Xiaomi
 PRODUCT_DEVICE := mido
 
