@@ -18,7 +18,7 @@
 /sys/class/tp_glove/tp_glove/glove_enable	u:object_r:proc_touchpanel:s0
 
 # Block devices
-/dev/block/bootdevice/by-name/persist		u:object_r:persist_block_device:s0
+# /dev/block/bootdevice/by-name/persist		u:object_r:persist_block_device:s0
 
 # Data files
 /data/misc/netmgr/log\.txt			u:object_r:netmgrd_data_file:s0
