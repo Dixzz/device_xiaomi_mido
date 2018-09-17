@@ -22,6 +22,11 @@ DEVICE_PATH := device/xiaomi/mido
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
+TARGET_CPU_VARIANT := cortex-a53
+TARGET_BOOT_ANIMATION_RES += 1080
 
 # Kernel
 TARGET_KERNEL_CONFIG := mido_defconfig
@@ -47,5 +52,10 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
+# TextClassifier smart selection model files
+PRODUCT_PACKAGES += \
+	textclassifier.smartselection.bundle1
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/mido/BoardConfigVendor.mk
+
